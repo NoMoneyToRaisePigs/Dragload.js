@@ -18,11 +18,13 @@ input.onchange = function(event){
 };
 
 area.addEventListener('dragenter', function(event){
+    area.classList.add('show');
     console.log('dragenter');
     event.preventDefault();
 });
 
 area.addEventListener('dragleave', function(event){
+    area.classList.remove('show');
     console.log('dragleave');
     event.preventDefault();
 });

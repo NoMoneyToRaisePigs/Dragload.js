@@ -1,0 +1,49 @@
+#container{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+#area{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 2px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#area{
+    
+}
+
+#area::after{
+    
+    position: absolute;
+    display: none;
+    content: "Drop the file here";
+    line-height: 24px;
+    color: rgba(0,0,0,0.8);
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.show{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.show#area::after{
+    display: inline-block;
+}
+
+#input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
